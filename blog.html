@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phero Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="text-right m-4">
+        <button onclick="backHome()" class="btn btn-secondary ">Back</button>
+    </div>
+  <div class="w-[80%] mx-auto">
+    <h3 class="text-3xl  mb-4 mt-4 ">Discuss the scope of var, let, and const</h3>
+    <p class="text-lg ">var declarations are globally scoped or function scoped while let and const are block scoped. var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared</p>
+    <h3 class="text-3xl  mb-4 mt-4">Tell us the use cases of null and undefined</h3>
+    <h5>1.Null</h5>
+    <ol>
+        <li> <span>Explicit Absence of Value:</span> It is used to explicitly indicate the absence of a value or that a variable intentionally has no value.</li>
+        <li>Clearing Object Properties: Developers can set an object property to null to indicate that it should be considered empty or no longer in use.</li>
+        <li>Comparison: null is often used when comparing or checking for the absence of an object or value.</li>
+        <li>Garbage Collection: In some memory management scenarios, setting a reference to null can help in releasing memory resources by indicating that an object is no longer needed</li>
+    </ol>
+    <h5>1.Undefined</h5>
+    <ol>
+        <li>Default Initial Value: When a variable is declared but not initialized, it is assigned the value undefined by default.</li>
+        <li>Function Parameters: If a function is called with fewer arguments than declared parameters, the missing parameters are set to undefined.</li>
+        <li>Object Properties: If you try to access an object property that doesn't exist, the result is undefined.</li>
+        <li>Return Value: Functions that don't explicitly return a value return undefined</li>
+    </ol>
+    <h3 class="text-3xl mb-4 mt-4 ">What do you mean by REST API?</h3>
+    <p class="text-lg">REST API stands for "Representational State Transfer Application Programming Interface." It is an architectural style for designing networked applications, particularly web services, that relies on a stateless communication protocol, typically HTTP. REST is not a technology or a standard but rather a set of constraints and principles for building scalable and maintainable web services.</p>
+  </div>
+  <!-- js file  -->
+  <script src="./js/index.js"></script>
+</body>
+</html>

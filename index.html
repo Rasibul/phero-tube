@@ -17,10 +17,10 @@
                     <img src="img/Logo.png" alt="">
                 </div>
                 <div class="navbar-center">
-                    <button class="btn">Sort By view</button>
+                    <button  class="btn">Sort By view</button>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn btn-secondary">Blog</a>
+                    <a onclick="blogPage()" class="btn btn-secondary">Blog</a>
                 </div>
             </div>
         </nav>
@@ -30,14 +30,19 @@
         <div class="tab-container w-full">
             <div id="daynamic-btn" class="tabs tabs p-5  m-auto text-center flex justify-center gap-2">
             </div>
+            <!-- <div id="logo-img" class="hidden">
+                <img src="./img/Icon.png" alt="">
+                <p>Oops!! Sorry, There is no content here</p>
+            </div> -->
         </div>
+        
         <!-- card section -->
         <div id="card-container" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
         </div>
+        <div id="photo-container">
+
+        </div>
     </main>
-
-
-
     <!-- js file conect -->
     <script src="js/index.js"></script>
 </body>
