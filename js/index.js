@@ -23,6 +23,7 @@ const handelLoadData = async (categoryId) => {
     const data = await response.json();
     console.log(data.data)
     const divContainer = document.getElementById('card-container')
+    divContainer.textContent = '';
     data.data.forEach(videos => {
         const div = document.createElement('div')
         div.innerHTML = `
@@ -30,14 +31,14 @@ const handelLoadData = async (categoryId) => {
         <figure><img class= "h-40 w-80" src="${videos?.thumbnail}" /></figure>
         <div class="card-body">
         <div class="flex gap-2">
-        <img class= "h-10 w-10 rounded-full " src="${videos?.authors[0].profile_picture}" />
+        <img class= "h-10 w-10 rounded-full " src=${videos?.authors[0].profile_picture} />
         <h2 class="card-title">${videos.title}</h2>
         </div>
         <div class="flex gap-2">
-            <h2>"${videos?.authors[0].profile_name}"</h2>
+            <h2>${videos?.authors[0].profile_name}</h2>
             <span></span>
         </div>
-            <p></p>
+            <p>${videos?.others.views} views</p>
         </div>
       </div>
         `
@@ -49,3 +50,4 @@ const handelLoadData = async (categoryId) => {
 
 
 loadData()
+handelLoadData(1000)
